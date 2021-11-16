@@ -1,0 +1,235 @@
+h1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  @media only screen and (min-width: 450px) {
+    font-size: 3.75rem;
+    // line-height: 73px;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 3rem;
+    // line-height: 58px;
+  }
+}
+
+h2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  @media only screen and (min-width: 450px) {
+    font-size: 3rem;
+    // line-height: 58px;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 2rem;
+    // line-height: 40px;
+  }
+}
+h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  @media only screen and (min-width: 450px) {
+    font-size: 2rem;
+    // line-height: 40px;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 1.5rem;
+    // line-height: 40px;
+  }
+}
+h4 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  @media only screen and (min-width: 450px) {
+    font-size: 1.5rem;
+    // line-height: 29px;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 1.25rem;
+    // line-height: 40px;
+  }
+}
+h5 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  @media only screen and (min-width: 450px) {
+    font-size: 1.25rem;
+    line-height: 28px;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 1.13rem;
+    line-height: 22px;
+  }
+}
+h6 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  @media only screen and (min-width: 450px) {
+    font-size: 1.125rem;
+    line-height: 28px;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 1.13rem;
+    line-height: 22px;
+  }
+}
+
+// only FontSize mixins
+@mixin Large {
+  @media only screen and (min-width: 450px) {
+    font-size: 1.125rem;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 1rem;
+  }
+}
+@mixin Medium {
+  @media only screen and (min-width: 450px) {
+    font-size: 1rem;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 0.88rem;
+  }
+}
+@mixin Small {
+  @media only screen and (min-width: 450px) {
+    font-size: 0.88rem;
+  }
+  @media only screen and (max-width: 450px) {
+    font-size: 0.75rem;
+  }
+}
+//Subtitles:
+
+.subtitle-l {
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  @include Large;
+}
+.subtitle-m {
+  letter-spacing: 0.1px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  @include Medium;
+}
+.subtitle-s {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  @include Small;
+}
+//Body types
+.body-l-bold {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.1px;
+  @include Large;
+}
+.body-l-regular {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.1px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.1px;
+  @include Large;
+}
+.body-l-italic {
+  font-style: italic;
+  font-weight: normal;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  @include Large;
+}
+
+.body-m-bold {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.1px;
+  @include Medium;
+}
+.body-m-regular {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.1px;
+  @include Medium;
+}
+.body-m-italic {
+  font-style: italic;
+  font-weight: normal;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  @include Medium;
+}
+
+.body-s-bold {
+  font-style: normal;
+  font-weight: bold;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  letter-spacing: 0.1px;
+  @include Small;
+}
+.body-s-regular {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  letter-spacing: 0.1px;
+  @include Small;
+}
+.body-s-italic {
+  font-style: italic;
+  font-weight: normal;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  @include Small;
+}
+
+.button-l-regular {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.75px;
+  @include Large;
+}
+.button-m-regular {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.75px;
+  @include Medium;
+}
+.button-s-regular {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.75px;
+  @include Small;
+}
